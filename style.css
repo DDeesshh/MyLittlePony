@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Celestia";
+    src: url("fonts/CelestiaMediumRedux1.ttf") format("truetype");
+}
+
+h1,
+h3,
+p,
+button {
+    font-family: "Celestia";
+}
+
+.head-h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.head-h3 {
+    display: flex;
+    justify-content: center
+}
+
+
+h3 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+a {
+
+    cursor: pointer;
+    transition: 2s;
+    top: 2px;
+
+}
+
+a:hover{
+    color: rgb(180, 106, 249);
+    transition: 2s;
+}
+
+body {
+    margin: 30px 30px 0 30px;
+}
+
+.head-p {
+    display: flex;
+    flex-direction: column;
+}
+
+.imges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+
+
+@media screen and (max-width: 1720px) {
+    .imges {
+        display: grid;
+        grid-template-columns: 276px 276px 276px;
+        grid-template-rows: 285px 285px;
+        grid-row-gap: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 896px) {
+    .imges {
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: 200px;
+        /* grid-template-rows: 285px 285px 285px;
+        grid-row-gap: 30px; */
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.3fr 1fr 1.5fr;
+        gap: 0px 10px;
+
+    }
+
+    .logo {
+        height: 77px;
+        width: 80px;
+        margin-right: 5px;
+    }
+
+    .head-h1 {
+        align-items: center;
+    }
+
+    img {
+        height: 200px;
+    }
+
+
+
+}
